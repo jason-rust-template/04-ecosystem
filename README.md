@@ -14,3 +14,6 @@
 
 - tail -f /tmp/logs/ecosystem.log.2024-06-26
 - tail -f 命令在 Unix-like 系统中用于显示文件的最后几行内容，并且会持续监听文件的变化，实时显示新写入的内容
+
+# docker 启动 jeagertracing  本地日志打到线上去
+- docker run -d -p16686:16686 -p4317:4317 COLLECTOR_OTLP_ENABLED=true jaegertracing all-in-one:latest
