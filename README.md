@@ -17,3 +17,9 @@
 
 # docker 启动 jeagertracing  本地日志打到线上去
 - docker run -d -p16686:16686 -p4317:4317 COLLECTOR_OTLP_ENABLED=true jaegertracing all-in-one:latest
+
+# 宏
+- derive_builder derive_more strum
+- derive-builder: 构建数据结构的 builder
+- derive_more: 标准库 trait 的自动实现
+- strum: enum 相关的 trait 的自动实现
