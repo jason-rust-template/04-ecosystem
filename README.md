@@ -37,5 +37,19 @@
 - prost (介绍 gRPC 时再详细介绍)
 - tokio-stream
 - tokio-utils
-- loom
+- loom  (tokio 测试框架)
 - axum (介绍 hyper 生态时再详细介绍)
+
+- tokio_util
+- tokio_stream
+- 写一个简单的 Tcp Chat Server
+  - client 连接: 添加到全局状态
+  - 创建 peer
+  - 通知所有小伙伴
+  - client 断连: 从全局状态删除
+    - 通知所有小伙伴
+  - client 发消息
+  - 广播
+- tokio-console
+
+- teacher 用的 telnet 连接聊天, 我本地安装不上 用的 netcat 做的替代
