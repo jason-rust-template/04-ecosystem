@@ -53,3 +53,25 @@
 - tokio-console
 
 - teacher 用的 telnet 连接聊天, 我本地安装不上 用的 netcat 做的替代
+
+# 数据库处理
+- ORM
+  - diesel
+  - seaORM
+- Sql toolkit: sqlx
+  - FromRow
+  - Row
+- 为什么我们要避免使用 ORM
+  - 性能
+  - 不太需要额外的抽象
+  - 过于中庸 限制太多
+    - insert into on conflict ...
+    - CTE
+  - sql injection 已经收到足够重视
+  - 语言绑定，平台绑定
+- 构建高效且复杂的 SQL 是每个工程师的基本功
+- 构建一个 url shortener
+  - tokio
+  - axum
+  - sqlx
+  - nanoid
